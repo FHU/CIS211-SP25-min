@@ -1,3 +1,8 @@
+/* max blue: #002be7 */
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid white; */
+}
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -5,11 +10,53 @@ body {
     color: white;
 }
 
+h1, h2 {
+    font-family: "Rubik", system-ui, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center; 
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    background-color: #002be7;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    min-width: 200px;
+    display: inline-block;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #0021b2;
+}
+
+.btn.secondary {
+    color: #000;
+    background-color: #fff;;
+}
+
+.btn.secondary:hover {
+    background-color: hsla(0, 0%, 100%, .7);;
+}
+
 header {
     background-color: #000000;
     color: white;
 }
-
 
 #logo {
     font-size: 30px;
@@ -28,18 +75,67 @@ header nav ul li {
    display: inline ;
 }
 
-h1 {
-    font-size: 64px;
+section.hero {
     text-align: center;
 }
 
-h2 {
-    font-size: 30px;
-    text-align: center; 
-    font-weight: 200;
+.image-heading img {
+    max-width: 100px;
 }
+
+.pricing-container {
+    margin-top:4rem;
+    text-transform: uppercase;
+}
+
+.pricing-container b {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.pricing-container > div {
+    margin-block: 2rem;
+}
+
 
 .fine-print {
-    font-size: 10px;
+    font-size: .7rem;
     text-align: center;
+}
+
+
+.major-faq .question-container{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.major-faq .question-container .left {
+    min-width: 40px;
+    text-align: center;
+}
+
+.circle-bg {
+    width: 30px;
+    height: 30px;
+    background: #002be7;
+    background: linear-gradient(180deg,#002be7 0%, #001679 100% );
+    border-radius: 50%;
+    line-height: 30px;
+
+    font-weight: 800;
+}
+
+.major-faq .question-container .right p {
+    font-size: 1.0rem;
+}
+
+.major-faq .question-container .right p a {
+    color: #4f8bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.major-faq .question-container .right p a:hover {
+    color: white;
 }
